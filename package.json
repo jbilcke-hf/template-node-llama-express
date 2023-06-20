@@ -1,0 +1,21 @@
+{
+  "name": "template-node-llama-express",
+  "version": "1.0.0",
+  "description": "A minimalist Docker Space to help people getting started with Node, Express, node-llama and TypeScript",
+  "main": "src/index.mts",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/index.mts",
+    "docker": "npm run docker:build && npm run docker:run",
+    "docker:build": "docker build -t template-node-llama-express .",
+    "docker:run": "docker run -it -p 7860:7860 template-node-llama-express"
+  },
+  "author": "Julian Bilcke <julian.bilcke@huggingface.co>",
+  "license": "Apache License",
+  "dependencies": {
+    "@llama-node/llama-cpp": "^0.1.6",
+    "@types/express": "^4.17.17",
+    "express": "^4.18.2",
+    "llama-node": "^0.1.6",
+    "ts-node": "^10.9.1"
+  }
+}
