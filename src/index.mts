@@ -22,7 +22,7 @@ import { LLamaCpp } from "llama-node/dist/llm/llama-cpp.js"
   const app = express()
   const port = 7860
 
-  const timeoutInSec = 1 * 60 // 1 min how before killing a request
+  const timeoutInSec = 3 * 60 // 1 min how before killing a request
 
   app.use(express.static("public"))
  
