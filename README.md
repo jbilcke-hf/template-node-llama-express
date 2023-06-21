@@ -30,6 +30,10 @@ npm i
 npm run start
 ```
 
+Then open the generator by passing a prompt in the query parameters:
+
+[http://localhost:7860?prompt=a webpage recipe for making chocolate chip cookies](http://localhost:7860/?prompt=a%20webpage%20recipe%20for%20making%20chocolate%20chip%20cookies)
+
 ### Building and running with Docker
 
 Note: the model will be downloaded by Docker,
