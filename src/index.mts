@@ -22,7 +22,7 @@ await llama.load({
 const app = express()
 const port = 7860
 
-const timeoutInSec = 5 * 60 // 5 min how before killing a request
+const timeoutInSec = 5 * 60 // 5 min before killing a request
 
 app.use(express.static("public"))
  
